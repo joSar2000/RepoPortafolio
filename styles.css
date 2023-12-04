@@ -1,0 +1,203 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #F5F5F5;
+    /* Color de fondo */
+    color: #333;
+    /* Color de texto principal */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos con colores llamativos */
+:root {
+    --color-primario: #0A192F;
+    /* Azul oscuro */
+    --color-secundario: #F6F6F6;
+    /* Gris claro */
+    --color-terciario: #FFFFFF;
+    /* Blanco */
+    --color-acento: #FFD369;
+    /* Acento */
+}
+
+/* Sección con imagen de fondo */
+#seccionConFondo {
+    background-image: url('images/logo.jpg');
+    /* Reemplaza 'images/fondo.jpg' por tu ruta de imagen */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#seccionConFondo h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección de presentación */
+#presentacion {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 80px 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Sección de biografía */
+#biografia {
+    padding: 80px 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+/* Sección de habilidades */
+#habilidades {
+    background-color: var(--color-secundario);
+    padding: 80px 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Sección de logros y experiencia */
+#logros {
+    padding: 80px 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+/* Sección de proyectos */
+#proyectos {
+    background-color: var(--color-primario);
+    padding: 80px 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Color de fondo del overlay */
+    transition: top 0.3s ease;
+    pointer-events: none;
+    /* Permite clics a través del overlay */
+    opacity: 0;
+}
+
+.card:hover::before {
+    top: 0;
+    opacity: 1;
+}
+
+.card-body {
+    position: relative;
+    z-index: 1;
+    /* Para que el texto esté sobre el overlay */
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.card:hover .card-body {
+    transform: translateY(0);
+}
+
+
+.card img {
+    height: 275px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    color: var(--color-texto-secundario);
+}
+
+.perfil-img {
+    border-radius: 50%;
+    /* Establece la forma ovalada */
+    width: 300px;
+    /* Ancho de la imagen */
+    height: 300px;
+    /* Altura de la imagen */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+}
+
+/* Estilos para las filas */
+.fila {
+    display: flex;
+    flex-direction: row;
+    /* Si deseas que se organicen verticalmente, puedes usar flex-direction: column; */
+}
+
+/* Estilos para las columnas */
+.columna {
+    flex: 2;
+    padding: 20px;
+}
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,11 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Hola</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Portafolio de Proyectos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wa.me/+5930999556888" target="_blank">Contactarme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#presentacion">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Sección con imagen de fondo y contenido -->
+    <section id="seccionConFondo">
+        <div id="contenidoConScroll">
+            <!-- Contenido dentro de la sección con imagen de fondo -->
+            <h1>Bienvenidos a mi portafolio</h1>
+            <!-- ... más contenido ... -->
+        </div>
+    </section>
+    <br>
+    <!-- Sección de presentación -->
+    <section id="presentacion" class="container py-5 ondulado">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Hola, soy Jorge Enrique Sarmiento Ordoñez <br> [VR and mobile developer]</h1>
+                <p>Soy un estudiante de la carrera de Sistemas Informáticos y Computación de la Universidad Técnica
+                    Particular de Loja (UTPL). Amante de la tecnología, me desempeño como programador de aplicaciones
+                    móviles y proyectos de realidad virtual.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de imagen y biografía -->
+    <section id="biografia" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/perfil.jpeg" alt="Tu Imagen" class="perfil-img" sizes="10px">
+                </div>
+                <div class="col-md-6">
+                    <h2>¿Cómo me defino?</h2>
+                    <p>Soy una persona trabajadora y ordenada, apasionado por el orden y proactividad con cada uno de
+                        los proyectos en los que he trabajado.<br>
+                        Me gusta innovar y actualizarme constantemente ya que considero que la tecnología avanza a pasos
+                        agigantados y sobre todo que siempre es un bueno momento para aprender algo nuevo. <br>
+                        Te invito a conocer cada una de mis habilidades en los diferentes frameworks en los que he
+                        trabajado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de habilidades -->
+    <section id="habilidades" class="container py-5">
+        <h2>Mis Habilidades</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Flutter</h3>
+                <div class="col-md-6">
+                    <img src="images/flutter.png" alt="Tu Imagen" class="img-fluid">
+                </div>
+                <br>
+                <ul>
+                    <li>Conocimiento de desarrollo de aplicaciones nativas móviles escalables.</li>
+                    <li>Desarrollo de aplicaciones Web usando Flutter.</li>
+                    <li>Inclusión de patrones de diseño como BlocPattern que permiten el crecimiento continuo de la App.
+                    </li>
+                    <li>Integración de otros widgets como GoogleMaps.</li>
+                    <li>Consumo de bases de datos y APIs.</li>
+                    <li>Despliegue dentro de las tiendas de aplicaciones.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Unity</h3>
+                <div class="col-md-6">
+                    <img src="images/unity.png" alt="Tu Imagen" class="img-fluid">
+                </div>
+                <ul>
+                    <li>Desarrollo de videojuegos en 2D y 3D.</li>
+                    <li>Manejo de patrones de diseño para la escalabilidad de los proyectos.</li>
+                    <li>Integración de base de datos y otros servicios Web.</li>
+                    <li>Manejo de Photon para videojuegos multijugador.</li>
+                    <li>Integración de Agora.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de logros y experiencia -->
+    <section id="logros" class="container py-5">
+        <h2>Logros y Experiencia</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Experiencia Laboral</h3>
+                <ul>
+                    <li>Desarrollador móvil dentro de UTPL y Punto Pymes Cia. Ltda.</li>
+                    <li>Desarrollador dentro de Unity en UTPL y Punto Pymes Cia. Ltda.</li>
+                    <!-- Agrega más según tu experiencia -->
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Logros</h3>
+                <ul>
+                    <li>Segundo lugar en la "GAME JAM LATAM" celebrado en 2021.</li>
+                    <!-- Agrega más logros -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    </div>
+    <section id="proyectos" class="bg-light py-5">
+        <div class="container">
+            <h2>Mis Productos</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Tarjeta con información -->
+                    <div class="card" data-toggle="modal" data-target="#videoModal">
+                        <br>
+                        <img src="images/civil.png" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Simulador mano de obra calificada</h5>
+                            <p class="card-text">Simula procesos previos antes de la cimentación de una obra</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
+                        aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <!-- Video de YouTube -->
+                                    <iframe width="470" height="315"
+                                        src="https://www.youtube.com/embed/_Sz0wqAYis0?si=_9LgKzMzOt-0XYUM"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                    <!-- Información adicional -->
+                                    <h2>¿De qué trata?</h2>
+                                    <p>Pon a prueba tus conocimientos sobre las fases previas a la cimtantación de una
+                                        construcción. <br>
+                                        Se trata de un software a medida que comprende un personaje principal (usuario)
+                                        que debe atravesar sobre las diferentes fases que comprende la construcción de
+                                        cimentaciones, estas fases comprenden: limpieza terreno, trazado y replanteo,
+                                        marcado del terreno, entre otras.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <!-- Tarjeta con información -->
+                    <div class="card" data-toggle="modal" data-target="#videoModal1">
+                        <br>
+                        <img src="images/quimica.png" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Laboratorio de química</h5>
+                            <p class="card-text">Simula un entorno de química controlado</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal1" tabindex="-1" role="dialog"
+                        aria-labelledby="videoModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <!-- Video de YouTube -->
+                                    <iframe width="470" height="315"
+                                        src="https://www.youtube.com/embed/YkVxB4JaQv8?si=WFLdZVpKAksHUubw"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                    <!-- Información adicional -->
+                                    <h2>¿De qué trata?</h2>
+                                    <p>Pon a prueba tus conocimientos sobre los instrumentales empleados en los
+                                        diferentes procesos químicos. <br>
+                                        Se trata de un software a media que comprende un personaje principal (usuario)
+                                        que puede desplazarse dentro de un laboratorio de química cumpliendo los
+                                        difetentes retos que consisten en la correcta elección de los distintos
+                                        materiales físicos usados con diversas fases como: medición de líquidos, pesaje
+                                        de elementos, entre otras.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- Tarjeta con información -->
+                    <div class="card" data-toggle="modal" data-target="#videoModal3">
+                        <br>
+                        <img src="images/sumpa.png" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Videojuego Amantes de Sumpa</h5>
+                            <p class="card-text">Software destinado al aprendizaje de las culturas aborígenes del
+                                Ecuador</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal3" tabindex="-1" role="dialog"
+                        aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <!-- Video de YouTube -->
+                                    <iframe width="470" height="315"
+                                        src="https://www.youtube.com/embed/WVg-8FtzR1Q?si=vP8O40tPq2A3olg0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                    <!-- Información adicional -->
+                                    <h2>¿De qué trata?</h2>
+                                    <p>Videojuego en tercera persona para niños enfocado en la cultura Las Vegas de
+                                        Ecuador, promoviendo el conocimiento de las costumbres y tradiciones de dicha
+                                        cultura. <br>
+                                        Se presentan diferentes dinámicas de videojuego tales como: shooter, armar
+                                        rompecabezas, arado de tierra y plantado de semillas, entre otras.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- Tarjeta con información -->
+                    <div class="card" data-toggle="modal" data-target="#videoModal4">
+                        <br>
+                        <img src="images/flutter2.png" class="card-img-top" alt="Producto 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercury Booking</h5>
+                            <p class="card-text">Software destinado a la creación de reservas dentro de hoteles</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal4" tabindex="-1" role="dialog"
+                        aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="images/flutter.png" alt="Tu Imagen" class="img-fluid">
+                                    <h2>¿De qué trata?</h2>
+                                    <p>Software destinado a la búsqueda de hoteles y reserva dentro de las mismas. <br>
+                                        Puede buscar hoteles en las distintas provincias del Ecuador mediante sus nombre
+                                        o dentro del mapa, además, presenta la facturación final una vez la reserva ha
+                                        sido creada con éxito.</p>
+                                    <a href="https://github.com/joSar2000/testMercury">Vea el repositorio dentro de
+                                        GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- Tarjeta con información -->
+                    <div class="card" data-toggle="modal" data-target="#videoModal5">
+                        <br>
+                        <img src="images/flutter2.png" class="card-img-top" alt="Producto 5">
+                        <div class="card-body">
+                            <h5 class="card-title">ServiFastApp</h5>
+                            <p class="card-text">Software a medida destinado a la contratación de personal especializado
+                                en varias ramas</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal5" tabindex="-1" role="dialog"
+                        aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="images/flutter.png" alt="Tu Imagen" class="img-fluid">
+                                    <h2>¿De qué trata?</h2>
+                                    <p>Contrate a una o varias personas para su negocio de acuerdo a las distintas
+                                        aptitudes que el usuario vea convenientes</p>
+                                    <a href="https://github.com/joSar2000/ServiFastApp/tree/main/servifast_app">Vea el
+                                        repositorio dentro de GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- Tarjeta con información -->
+                    <div class="card" data-toggle="modal" data-target="#videoModal6">
+                        <br>
+                        <img src="images/flutter2.png" class="card-img-top" alt="Producto 5">
+                        <div class="card-body">
+                            <h5 class="card-title">PachaKumir</h5>
+                            <p class="card-text">Software a medida para controlar la cantidad de carbono emitida.</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal6" tabindex="-1" role="dialog"
+                        aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="images/flutter.png" alt="Tu Imagen" class="img-fluid">
+                                    <h2>¿De qué trata?</h2>
+                                    <p>Conozca la cantidad de carbono emitida por los diferentes medios de transporte
+                                        con ayuda de una calculadora que recibe datos como tipo de transporte,
+                                        kilómetros recorridos, tipo de diesel o gasolina utilizados, entre otros.</p>
+                                    <a href="https://github.com/joSar2000/CarbonoApp">Vea el repositorio dentro de
+                                        GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Más productos similares -->
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2023 Mi Portafolio</p>
+    </footer>
+    <footer class="text-center py-4">
+        <!-- Primera fila -->
+        <div class="fila">
+            <div class="columna">
+                <h5>Jorge Sarmiento</h5>
+            </div>
+            <div class="columna">
+                <img src="images/link.png" class="img-fluid" width="50px" height="50px">
+            </div>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="fila">
+            <div class="columna">
+                <h5>joSar2000</h5>
+            </div>
+            <div class="columna">
+                <img src="images/git.png" class="img-fluid" width="75px" height="50px">
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para el desplazamiento suave -->
+    <script>
+        $(document).ready(function () {
+            $("a.nav-link").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    if (hash === '#presentacion') { // Si se hace clic en "Sobre mí"
+                        $('html, body').animate({
+                            scrollTop: $('#presentacion').offset().top // Desplazamiento hacia la sección con id "presentacion"
+                        }, 800, function () {
+                            window.location.hash = hash;
+                        });
+                    } else {
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("a.nav-link").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    if (hash === '#proyectos') { // Si se hace clic en "Sobre mí"
+                        $('html, body').animate({
+                            scrollTop: $('#proyectos').offset().top // Desplazamiento hacia la sección con id "presentacion"
+                        }, 800, function () {
+                            window.location.hash = hash;
+                        });
+                    } else {
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
 </body>
+
 </html>
